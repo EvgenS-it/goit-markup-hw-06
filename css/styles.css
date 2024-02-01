@@ -62,6 +62,8 @@ p {
 /** =============== HEADER ===============  */
 
 .header {
+  /*! padding added for mob  */
+  padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -94,7 +96,8 @@ p {
 }
 
 .nav-list {
-  display: flex;
+  /*! display: flex; */
+  display: none;
   gap: 40px;
 }
 
@@ -136,7 +139,8 @@ p {
 }
 
 .address-list {
-  display: flex;
+  /*! display: flex; */
+  display: none;
   gap: 40px;
 }
 
@@ -151,6 +155,76 @@ p {
 .address-link:hover,
 .address-link:focus {
   color: #404bbf;
+}
+
+.menu-open-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-icon-svg {
+  fill: #2f2f37;
+}
+
+/* ========= MOB MENU =================  */
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  padding: 0 16px;
+}
+
+.menu-close-btn {
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+  border-radius: 50%;
+  padding: 0;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-navigation {
+}
+
+.menu-nav-list {
+}
+
+.menu-nav-link {
+}
+
+.menu-address {
+}
+
+.menu-address-list {
+}
+
+.menu-address-link {
+}
+
+.menu-icons-list {
+}
+
+.menu-icon-item {
+}
+
+.menu-soc-link {
+}
+
+.menu-icon-svg {
 }
 
 /** =============== HEADER END ===============  */
@@ -377,6 +451,7 @@ p {
 }
 
 .team-icons-list {
+  /*? 232px or 100%  */
   max-width: 232px;
   margin: 0 auto;
   display: flex;
@@ -703,6 +778,7 @@ p {
 }
 
 .modal-close-btn {
+  /*? display block or flex  */
   display: block;
   width: 24px;
   height: 24px;
@@ -714,6 +790,7 @@ p {
   top: 24px;
   right: 24px;
   cursor: pointer;
+  /*? display block or flex  */
   display: flex;
   justify-content: center;
   align-items: center;

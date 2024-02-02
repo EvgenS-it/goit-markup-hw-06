@@ -62,8 +62,6 @@ p {
 /** =============== HEADER ===============  */
 
 .header {
-  /*! padding added for mob  */
-  padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -148,9 +146,12 @@ p {
 
 .address-link {
   color: #434455;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  /*! font-size: 16px; PC */
+  font-size: 12px;
+  /*! line-height: 1.5; PC */
+  line-height: 1.16;
+  /*! letter-spacing: 0.02em; PC */
+  letter-spacing: 0.04em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -162,7 +163,7 @@ p {
 .menu-open-btn {
   background-color: transparent;
   border: none;
-  padding: 0;
+  padding: 24px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -183,7 +184,6 @@ p {
   padding: 72px 16px 40px 16px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   overflow: auto;
   opacity: 0;
   visibility: hidden;
@@ -230,10 +230,9 @@ p {
   color: #404bbf;
 }
 
-.menu-contacts-wrap {
-}
-
 .menu-address {
+  display: flex;
+  margin-top: auto;
 }
 
 .menu-address-list {
@@ -1032,6 +1031,32 @@ p {
     max-width: 768px;
   }
 
+  /** ============ HEADER ============  */
+
+  .menu-open-btn,
+  .mob-menu {
+    display: none;
+  }
+
+  .logo {
+    margin-right: 120px;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .current::after {
+    display: block;
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
   /** ============ HERO ============  */
 
   .hero {
@@ -1116,6 +1141,23 @@ p {
 
   .section {
     padding: 120px 0;
+  }
+
+  /** ============ HEADER ============  */
+
+  .logo {
+    margin-right: 76px;
+  }
+
+  .address-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 
   /** ============ HERO ============  */

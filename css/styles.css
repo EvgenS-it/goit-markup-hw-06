@@ -827,13 +827,15 @@ p {
 }
 
 .modal {
-  width: 408px;
+  /*! width: 408px; for PC*/
+  width: 288px;
   min-height: 584px;
   border-radius: 4px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  padding: 72px 24px 24px 24px;
+  /*! padding: 72px 24px 24px 24px; */
+  padding: 72px 16px 24px 16px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -981,6 +983,9 @@ p {
   font-weight: 400;
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.04em;
+  /*! flex added for mob  */
+  display: flex;
+  align-items: center;
 }
 
 .check-icon-wrap {
@@ -1004,6 +1009,11 @@ p {
   line-height: 1.33;
   letter-spacing: 0.04em;
   text-decoration-line: underline;
+}
+
+/*! div, class, width added for MOB  */
+.privacy-text-wrap {
+  width: 100%;
 }
 
 .check-input:checked + .check-text .check-icon-wrap {
@@ -1174,6 +1184,12 @@ p {
   .footer-input {
     width: 264px;
   }
+
+  /** ============= MODAL FORM =============  */
+  .modal {
+    width: 408px;
+    padding: 72px 24px 24px 24px;
+  }
 }
 /*! ============= media DESKTOP ==============  */
 
@@ -1324,4 +1340,6 @@ p {
   .footer-soc-container {
     margin-right: 80px;
   }
+
+  /** ============= MODAL FORM =============  */
 }
